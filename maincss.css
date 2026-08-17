@@ -30,7 +30,8 @@ header h1 {
 
 header nav {
     margin-left: auto;
-    margin-right: 3rem
+    margin-right: 3rem;
+    padding: 0.5rem 0 0.5rem
 }
 
 header nav ul {
@@ -39,11 +40,14 @@ header nav ul {
     gap: 1rem
 }
 
+header nav ul li {
+    display: block
+}
+
 header nav ul a {
     text-decoration: none;
     font-size: 1.3rem;
     padding: 0.5rem;
-    display: block;
     color: black
     
 }
@@ -51,8 +55,22 @@ header nav ul a {
 .new-entry-button {
     background-color: black;
     border-radius: 12px;
-    color: white
-    
+    color: white;
+    transition: 0.2s
+}
+
+.new-entry-button:hover {
+    background-color: aliceblue;
+    color: black
+}
+
+#vault-button {
+    transition: 0.2s;
+}
+
+#vault-button:hover {
+    color: aliceblue;
+   border-bottom: solid 2px aliceblue
 }
 
 

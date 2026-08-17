@@ -1,5 +1,12 @@
 document.querySelector("#entry-button").addEventListener("click", addEntry);
-let entries = [];
+let entries;
+
+if (JSON.parse(localStorage.getItem("entries"))) {
+entries = JSON.parse(localStorage.getItem("entries"));
+} 
+else {
+    entries = [];
+};
 const cardBox = document.querySelector(".card-box");
 
 
