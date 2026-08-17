@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Lane</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>New Entry</title>
+    <link rel="stylesheet" href="maincss.css">
+    <link rel="stylesheet" href="new-entry-styles.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
@@ -15,10 +16,10 @@
         <nav>
             <ul>
                 <li>
-                    <a href="vault.html">Archive</a>
+                    <a href="all-memories.html">Archive</a>
                 </li>
                 <li>
-                    <a class="new-entry-button"href="new-entry.html">New Entry</a>
+                    <a class="new-entry-button"href="new-memory.html">New Entry</a>
                 </li>
                 <li>
                     <a href="index.html"><i class="fa-regular fa-circle-user"></i></a>
@@ -26,21 +27,19 @@
             </ul>
         </nav>
     </header>
-    <aside class="title-box">
-        <h2>Daily Reflections</h2>
-        <p>A sanctuary for your thoughts</p>
-    </aside>
-    <main class="card-box">
-        
-        <div class="card first">card 1</div>
-        <div class="card second">card 2</div>
-        <div class="card third">card 3</div>
-        <div class="card fourth">card 4</div>
-        <div class="card last">card 5</div>
-
-
-
+    <main class="entry-box">
+        <form id="new-entry-form">
+            <input id="title" name="title" type="text" placeholder="Name your thought"> 
+            <textarea name="entry-body" id="entry-body" placeholder="Enter Your Thoughts"></textarea>
+        </form>
+        <div class="controls">
+            <button id="discard-button">Discard</button>
+            <button id="entry-button">Save Entry</button>
+        </div>
     </main>
+
+
+
     <footer>
         <h6>&copy;Me, 2026</h6>
         <ul>
@@ -50,5 +49,6 @@
         </ul>
 
     </footer>
+    
 </body>
 </html>

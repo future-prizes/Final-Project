@@ -1,0 +1,18 @@
+.header-box {
+    width: 70%;
+    margin: 5rem auto
+}
+
+.card-box {
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.entry-card {
+    padding: 5rem;
+    border-radius: 10px
+}
+
