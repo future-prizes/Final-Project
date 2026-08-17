@@ -61,16 +61,24 @@ header nav ul a {
 
 .new-entry-button:hover {
     background-color: aliceblue;
-    color: black
+    color: black;
+    box-shadow: 0px 0px 2px 2px;
 }
+
+.new-entry-button:active {
+    background-color: black;
+    color: white
+}
+
 
 #vault-button {
     transition: 0.2s;
+    border-bottom: solid 2px transparent
 }
 
 #vault-button:hover {
     color: aliceblue;
-   border-bottom: solid 2px aliceblue
+    border-bottom: solid 2px aliceblue
 }
 
 

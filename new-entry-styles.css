@@ -47,11 +47,11 @@
     width: 80%;
     display:flex;
     justify-content: flex-end;
-    gap: 0.5rem
+    gap: 0.5rem;
 }
 
 .controls > * {
-    cursor: pointer
+    cursor: pointer;
 }
 
 #entry-button {
@@ -80,5 +80,11 @@
     padding: 0.5rem;
     border: none;
     color: rgb(107, 110, 114);
-    background-color:rgba(0, 0, 0, 0)
+    background-color:rgba(0, 0, 0, 0);
+    transition: 0.2s;
+    border-bottom: solid 2px transparent
+}
+
+#discard-button:hover {
+    border-bottom: solid rgb(107, 110, 114) 2px
 }
