@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "nunito";
+    src: url("Nunito-VariableFont_wght.ttf");
+}
+
 * {
     box-sizing: border-box;
+    font-family: "nunito"
 }
 
 body {
