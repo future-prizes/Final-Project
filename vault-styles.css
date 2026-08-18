@@ -3,6 +3,16 @@
     margin: 5rem auto
 }
 
+.header-box h1 {
+    font-size: 3.5rem;
+    font-weight: 700
+}
+
+.header-box p {
+    color: rgb(107, 110, 114);
+    width: 50%
+}
+
 .card-box {
     max-width: 70%;
     display: flex;
@@ -10,7 +20,7 @@
     align-items: center;
     flex-direction: column;
     margin: 4rem auto;
-    gap: 1.1rem;
+    gap: 1.8rem;
 
 }
 
@@ -29,4 +39,35 @@
 .entry-card p {
     font-size: 1.2rem;
     color: rgb(63, 63, 63)
+}
+
+.empty-card {
+    padding: 1rem;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.empty-card > * {
+    text-align: center;
+}
+
+.empty-card a {
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    transition: 0.2s;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin-top: 1.5rem
+}
+
+.empty-card a:hover {
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0px 0px 2px 2px;
 }

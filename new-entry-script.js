@@ -7,9 +7,8 @@ entries = JSON.parse(localStorage.getItem("entries"));
 else {
     entries = [];
 };
+
 const cardBox = document.querySelector(".card-box");
-
-
 
 function addEntry() {
     let titleName = document.getElementById("title").value;
