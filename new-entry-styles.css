@@ -43,6 +43,13 @@
     outline:none
 }
 
+.bottom-box {
+    width: 80%;
+    display:flex;
+    align-items: center;
+    margin-bottom: 9rem
+}
+
 .controls {
     width: 80%;
     display:flex;
@@ -88,3 +95,75 @@
 #discard-button:hover {
     border-bottom: solid rgb(107, 110, 114) 2px
 }
+
+.dropdown {
+    position: relative;
+}
+
+.drop-button {
+    border:none;
+    border-radius: 8px;
+    cursor:pointer;
+    background-color: gainsboro;
+    padding: 0.8rem
+}
+
+.dropdown:hover .drop-button{
+    background-color: rgb(200,200,200);
+}
+
+.drop-list {
+    display: none;
+    position: absolute;
+    width:100%;
+
+}
+
+.dropdown:hover .drop-list {
+    display:block
+}
+
+.mood {
+    padding: 0.4rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.happy {
+    background-color: blanchedalmond;
+}
+
+.pensive {
+    background-color: cornflowerblue;
+}
+
+.choleric {
+    background-color: lightcoral;
+}
+
+.satisfied {
+    background-color: palegreen;
+}
+
+.melancholic {
+    background-color: lightslategray;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.mood-box {
+    display: flex;
+    align-items: center;
+    width: 50%
+}
+
+#chosen-mood {
+    margin-left: 3rem;
+    min-width: 4rem;
+    display: none;
+    border-radius: 8px;
+    padding: 0.7rem
+}
+

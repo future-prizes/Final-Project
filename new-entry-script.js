@@ -1,5 +1,8 @@
 document.querySelector("#entry-button").addEventListener("click", addEntry);
+document.querySelectorAll(".mood").forEach((element) => {element.addEventListener("click", () => addMood(element))})
 let entries;
+const cardBox = document.querySelector(".card-box");
+let mood = "";
 
 if (JSON.parse(localStorage.getItem("entries"))) {
 entries = JSON.parse(localStorage.getItem("entries"));
@@ -8,15 +11,15 @@ else {
     entries = [];
 };
 
-const cardBox = document.querySelector(".card-box");
-
 function addEntry() {
     let titleName = document.getElementById("title").value;
     let entryBody = document.getElementById("entry-body").value;
+    let mood = document.getElementById("chosen-mood").textContent
 
     let entry = {
         title: titleName,
-        body: entryBody
+        body: entryBody,
+        mood: mood
     }
 
     entries.push(entry)
@@ -26,3 +29,14 @@ function addEntry() {
     document.getElementById("entry-body").value= "";
 }
 
+function addMood(m) {
+    let mood = m.textContent;
+    let chosenMood = document.querySelector("#chosen-mood");
+    if (chosenMood.classList) {
+        chosenMood.classList=""
+    }
+    chosenMood.classList.add(mood.toLowerCase());
+    chosenMood.classList.add("mood");
+    chosenMood.textContent = mood;
+    chosenMood.style.display = "block"
+}

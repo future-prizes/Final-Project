@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <script defer src="new-entry-script.js"></script>
     <link rel="stylesheet" href="maincss.css">
     <link rel="stylesheet" href="new-entry-styles.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
+
 <body>
     <header>
         <h1>
@@ -17,10 +19,10 @@
         <nav>
             <ul>
                 <li>
-                    <a id="vault-button"href="vault.html">Archive</a>
+                    <a id="vault-button" href="vault.html">Archive</a>
                 </li>
                 <li>
-                    <a class="new-entry-button"href="new-entry.html">New Entry</a>
+                    <a class="new-entry-button" href="new-entry.html">New Entry</a>
                 </li>
                 <li>
                     <a id="profile-button" href="index.html"><i class="fa-regular fa-circle-user"></i></a>
@@ -30,12 +32,28 @@
     </header>
     <main class="entry-box">
         <form id="new-entry-form">
-            <input id="title" name="title" type="text" placeholder="Name your thought"> 
+            <input id="title" name="title" type="text" placeholder="Name your thought">
             <textarea name="entry-body" id="entry-body" placeholder="Enter Your Thoughts"></textarea>
         </form>
-        <div class="controls">
-            <button id="discard-button">Discard</button>
-            <button id="entry-button">Save Entry</button>
+        <div class="bottom-box">
+            <div class="mood-box">
+                <div class="dropdown">
+                    <button class="drop-button">Choose your Mood</button>
+                    <div class="drop-list">
+                        <div class="mood happy">Happy<i class="fa-regular fa-face-smile-beam"></i></div>
+                        <div class="mood pensive">Pensive<i class="fa-regular fa-lightbulb"></i></div>
+                        <div class="mood choleric">Choleric<i class="fa-solid fa-bomb"></i></div>
+                        <div class="mood satisfied">Satisfied<i class="fa-regular fa-thumbs-up"></i></div>
+                        <div class="mood melancholic">Melancholic<i class="fa-solid fa-cloud-rain"></i></div>
+                    </div>
+                </div>
+                <aside id="chosen-mood">
+                </aside>
+            </div>
+            <div class="controls">
+                <button id="discard-button">Discard</button>
+                <button id="entry-button">Save Entry</button>
+            </div>
         </div>
     </main>
     <footer>
@@ -47,6 +65,7 @@
         </ul>
 
     </footer>
-    
+
 </body>
+
 </html>
