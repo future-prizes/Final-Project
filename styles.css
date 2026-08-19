@@ -3,7 +3,7 @@
 
 .title-box {
     max-width: 70%;
-    margin: 5rem auto;
+    margin: 2rem auto;
 }
 
 .title-box h2 {
@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     max-width: 70%;
-    margin: 8rem auto;
+    margin: 4rem auto;
     grid-template-areas: 
     "first first second"
     "third fourth fourth"
@@ -29,7 +29,7 @@
 }
 
 .card {
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
     max-width: 100%;
    
@@ -42,7 +42,7 @@
 }
 
 .card h4 {
-    margin-bottom: 3rem
+    margin-bottom: 1.8rem
 }
 
 .first {
@@ -77,7 +77,7 @@
 
 .mood {
     max-width: max-content;
-    margin-top: 4rem;
+    margin-top: 2rem;
     min-width: 4rem;
     text-align:center;
     border-radius: 8px;

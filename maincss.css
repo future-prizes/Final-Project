@@ -24,14 +24,15 @@ header {
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 2rem
 }
 
 header nav {
     margin-left: auto;
     margin-right: 3rem;
-    padding: 0.5rem 0 0.5rem
+    padding-top: 0.3rem
+
 }
 
 header nav ul {
@@ -46,7 +47,7 @@ header nav ul li {
 
 header nav ul a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.5rem;
     color: black
     
@@ -82,8 +83,8 @@ header nav ul a {
 }
 
 #profile-button i {
-    font-size: 2rem;
-    transition: 0.8;
+    font-size: 1.4rem;
+    transition: 0.2s;
 }
 
 #profile-button i:hover {
