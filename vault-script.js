@@ -6,13 +6,24 @@ if (entries) {
     let div = document.createElement("div");
     let h = document.createElement("h4");
     let p = document.createElement("p");
+    let aside = document.createElement("aside");
     h.textContent = entry.title;
     p.textContent = entry.body;
+    aside.textContent = entry.mood;
     div.appendChild(h);
     div.appendChild(p);
+    div.appendChild(aside);
     div.classList.add("entry-card");
     cardBox.appendChild(div);
+    aside.classList.add("mood");
+    if (entry.mood){
+    aside.classList.add((entry.mood).toLowerCase())
+}
+    
   });
+
+  
+
 } 
 else {
     let div = document.createElement("div");

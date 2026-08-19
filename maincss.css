@@ -81,6 +81,14 @@ header nav ul a {
     border-bottom: solid 2px aliceblue
 }
 
+#profile-button i {
+    font-size: 2rem;
+    transition: 0.8;
+}
+
+#profile-button i:hover {
+    color: aliceblue;
+}
 
 /*Footer */
 

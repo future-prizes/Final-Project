@@ -35,7 +35,8 @@
     height: 30rem;
     background-color:rgba(0, 0, 0, 0);
     border: none;
-    resize: none
+    resize: none;
+    font-size: 1rem
 
 }
 
@@ -51,7 +52,7 @@
 }
 
 .controls {
-    width: 80%;
+    width: 50%;
     display:flex;
     justify-content: flex-end;
     gap: 0.5rem;

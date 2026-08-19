@@ -8,10 +8,13 @@ top5.forEach((entry, index) => {
 let div = document.createElement("div");
 let h = document.createElement("h4");
 let p = document.createElement("p");
+let aside = document.createElement("aside");
+aside.textContent = entry.mood;
 h.textContent = entry.title;
 p.textContent = entry.body
 div.appendChild(h);
 div.appendChild(p);
+div.appendChild(aside);
 div.classList.add("card");
 switch (index) {
     case 0: 
@@ -29,6 +32,11 @@ switch (index) {
     case 4:
     div.classList.add("last")
     break
+}
+
+aside.classList.add("mood");
+if (entry.mood){
+    aside.classList.add((entry.mood).toLowerCase())
 }
 
 cardBox.appendChild(div);

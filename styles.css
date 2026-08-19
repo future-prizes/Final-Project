@@ -29,15 +29,26 @@
 }
 
 .card {
-    padding: 5rem;
+    padding: 2rem;
     border-radius: 10px;
+    max-width: 100%;
+   
+}
 
+.card p {
+    width: 100%;
+
+    overflow: auto;
+}
+
+.card h4 {
+    margin-bottom: 3rem
 }
 
 .first {
     grid-area: first;
     background-color: rgb(243, 243, 243);
-    box-shadow: 0px 5px 9px 1px rgb(224, 224, 224)
+    box-shadow: 0px 5px 9px 1px rgb(190, 190, 190)
 }
 
 .second {
@@ -49,7 +60,7 @@
 .third {
     grid-area: third;
     background-color: rgb(243, 243, 243);
-    box-shadow: 0px 5px 9px 1px rgb(224, 224, 224)
+    box-shadow: 0px 5px 9px 1px rgb(190, 190, 190)
 }
 
 .fourth {
@@ -61,9 +72,39 @@
 .last {
     grid-area: last;
     background-color: rgb(243, 243, 243);
-    box-shadow: 0px 5px 9px 1px rgb(224, 224, 224)
+    box-shadow: 0px 5px 9px 1px rgb(190, 190, 190)
 }
 
+.mood {
+    max-width: max-content;
+    margin-top: 4rem;
+    min-width: 4rem;
+    text-align:center;
+    border-radius: 8px;
+    padding: 0.7rem
+}
+
+.happy {
+    background-color: blanchedalmond;
+}
+
+.pensive {
+    background-color: cornflowerblue;
+}
+
+.choleric {
+    background-color: lightcoral;
+}
+
+.satisfied {
+    background-color: palegreen;
+}
+
+.melancholic {
+    background-color: lightslategray;
+}
+
+/*Empty entries case*/
 .empty-card {
     padding: 1rem;
     width: 100%;
