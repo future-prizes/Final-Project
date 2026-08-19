@@ -102,3 +102,20 @@
     color: black;
     box-shadow: 0px 0px 2px 2px;
 }
+
+.deleteButton {
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    transition: 0.2s;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin-top:2rem;
+    border:none
+}
+
+.deleteButton:hover {
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0px 0px 2px 2px;
+}
